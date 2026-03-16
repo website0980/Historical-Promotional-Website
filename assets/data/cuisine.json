@@ -1,0 +1,90 @@
+[
+    {
+        "category": "Appetizers",
+        "description": "Start your meal with these delicious bites.",
+        "image": "",
+        "items": [
+            {
+                "name": "Sinulog na Isda",
+                "description": "Traditional fish stew with local spices, served with steamed rice.",
+                "image": ""
+            },
+            {
+                "name": "Hinava",
+                "description": "Indigenous ceviche made with fresh river fish, lime, and chili.",
+                "image": ""
+            },
+            {
+                "name": "Kinilaw",
+                "description": "Raw fish marinated in vinegar, lime, and ginger, a Filipino favorite.",
+                "image": ""
+            }
+        ]
+    },
+    {
+        "category": "Main Courses",
+        "description": "Hearty dishes that define Tagum's culinary identity.",
+        "image": "../assets/images/cuisine/main-courses.jpg",
+        "items": [
+            {
+                "name": "Tinutupig",
+                "description": "Roasted meat wrapped in banana leaves, slow-cooked to perfection.",
+                "image": "../assets/images/cuisine/tinutupig.jpg"
+            },
+            {
+                "name": "Adobong Tagum",
+                "description": "A local twist on the classic adobo, using native vinegar and spices.",
+                "image": "../assets/images/cuisine/adobong-tagum.jpg"
+            },
+            {
+                "name": "Pansit Tagum",
+                "description": "Stir-fried noodles with fresh vegetables and seafood.",
+                "image": "../assets/images/cuisine/pansit-tagum.jpg"
+            }
+        ]
+    },
+    {
+        "category": "Desserts",
+        "description": "Sweet treats to end your meal on a high note.",
+        "image": "../assets/images/cuisine/desserts.jpg",
+        "items": [
+            {
+                "name": "Sarangon",
+                "description": "Local rice cakes made with coconut milk and brown sugar.",
+                "image": "../assets/images/cuisine/sarangon.jpg"
+            },
+            {
+                "name": "Bibingka Tagum",
+                "description": "Soft rice cake baked in clay pots, topped with cheese and salted egg.",
+                "image": "../assets/images/cuisine/bibingka.jpg"
+            },
+            {
+                "name": "Halo-Halo Special",
+                "description": "A refreshing mix of shaved ice, sweet beans, fruits, and leche flan.",
+                "image": "../assets/images/cuisine/halo-halo.jpg"
+            }
+        ]
+    },
+    {
+        "category": "Street Food",
+        "description": "Quick and flavorful snacks you can find in local markets.",
+        "image": "../assets/images/cuisine/street-food.jpg",
+        "items": [
+            {
+                "name": "Isaw",
+                "description": "Grilled chicken intestines, a popular street food skewer.",
+                "image": "../assets/images/cuisine/isaw.jpg"
+            },
+            {
+                "name": "Kwek-Kwek",
+                "description": "Deep-fried quail eggs coated in orange batter, served with vinegar dip.",
+                "image": "../assets/images/cuisine/kwek-kwek.jpg"
+            },
+            {
+                "name": "Fish Ball",
+                "description": "Deep-fried fish balls served with sweet and spicy sauce.",
+                "image": "../assets/images/cuisine/fish-ball.jpg"
+            }
+        ]
+    }
+]

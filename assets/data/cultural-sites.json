@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Tagum City Cathedral",
+        "description": "The Tagum City Cathedral is a historic church that showcases beautiful architecture and religious art.",
+        "image": "../assets/images/cultural-sites/cathedral.jpg",
+        "location": "City Center",
+        "history": "Built in the early 1900s, this cathedral has been a center of religious life in Tagum.",
+        "highlights": "Beautiful stained glass windows, Historic altar, Peaceful gardens"
+    },
+    {
+        "name": "Liberation Park",
+        "description": "Liberation Park commemorates the liberation of Davao del Norte and features monuments and memorials.",
+        "image": "../assets/images/cultural-sites/liberation.jpg",
+        "location": "Central Tagum",
+        "history": "Established to honor the heroes who fought for freedom in the region.",
+        "highlights": "Monuments, Memorial walls, Cultural exhibits"
+    },
+    {
+        "name": "Tagum City Museum",
+        "description": "The Tagum City Museum preserves and showcases the rich cultural heritage and history of the region.",
+        "image": "../assets/images/cultural-sites/museum.jpg",
+        "location": "Near City Hall",
+        "history": "Features artifacts from pre-colonial to modern times.",
+        "highlights": "Archaeological finds, Traditional costumes, Historical documents"
+    },
+    {
+        "name": "test",
+        "description": "test",
+        "location": "test",
+        "history": "test",
+        "highlights": "test",
+        "image": ""
+    }
+]
