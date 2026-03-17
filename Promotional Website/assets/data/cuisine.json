@@ -1,0 +1,80 @@
+[
+    {
+        "category": "Appetizers",
+        "description": "Start your meal with these delicious bites.",
+        "image": "../assets/images/cuisine/cuisine_1773640410_69b79ada3e049.jpg",
+        "items": [
+            {
+                "name": "Sinulog na Isda",
+                "description": "Traditional fish stew with local spices, served with steamed rice.",
+                "image": ""
+            },
+            {
+                "name": "Hinava",
+                "description": "Indigenous ceviche made with fresh river fish, lime, and chili.",
+                "image": ""
+            },
+            {
+                "name": "Kinilaw",
+                "description": "Raw fish marinated in vinegar, lime, and ginger, a Filipino favorite.",
+                "image": ""
+            }
+        ]
+    },
+    {
+        "category": "Main Courses",
+        "description": "Hearty dishes that define Tagum's culinary identity.",
+        "image": "../assets/images/cuisine/cuisine_1773641356_69b79e8c0d53d.jpg",
+        "items": [
+            {
+                "name": "Sinagapona Kagan Food ",
+                "description": "Sinagapona is commonly served with rice and enjoyed during family meals and cultural gatherings, reflecting the Kagan community\u2019s connection to their natural resources and traditional cooking practices.",
+                "image": "../assets/images/cuisine/cuisine_1773641891_69b7a0a344d63.jpg"
+            }
+        ]
+    },
+    {
+        "category": "Desserts",
+        "description": "Sweet treats to end your meal on a high note.",
+        "image": "../assets/images/cuisine/cuisine_1773643441_69b7a6b152ba7.jpg",
+        "items": [
+            {
+                "name": "Amik, Muslim Food",
+                "description": "Amik is a traditional Muslim sweet delicacy made from rice flour and sugar, formed into a delicate lace-like pattern when fried.",
+                "image": "../assets/images/cuisine/cuisine_1773644868_69b7ac44cd319.jpg"
+            },
+            {
+                "name": "Daral",
+                "description": "Daral is a sweet rolled crepe-like delicacy made from thin rice flour pancakes filled with sweetened coconut (usually mixed with brown sugar).",
+                "image": "../assets/images/cuisine/cuisine_1773651653_69b7c6c51a2a7.jpg"
+            },
+            {
+                "name": "Pitis",
+                "description": "Pitis is a sweet rice-based delicacy usually made from glutinous rice, coconut milk, and sugar. It has a soft and sticky texture and is often wrapped in banana leaves or served in small portions.",
+                "image": "../assets/images/cuisine/cuisine_1773645132_69b7ad4cdf2d0.jpg"
+            }
+        ]
+    },
+    {
+        "category": "Street Food",
+        "description": "Quick and flavorful snacks you can find in local markets.",
+        "image": "../assets/images/cuisine/cuisine_1773643518_69b7a6feaf859.jpg",
+        "items": [
+            {
+                "name": "Isaw",
+                "description": "Grilled chicken intestines, a popular street food skewer.",
+                "image": "../assets/images/cuisine/isaw.jpg"
+            },
+            {
+                "name": "Kwek-Kwek",
+                "description": "Deep-fried quail eggs coated in orange batter, served with vinegar dip.",
+                "image": "../assets/images/cuisine/kwek-kwek.jpg"
+            },
+            {
+                "name": "Fish Ball",
+                "description": "Deep-fried fish balls served with sweet and spicy sauce.",
+                "image": "../assets/images/cuisine/fish-ball.jpg"
+            }
+        ]
+    }
+]

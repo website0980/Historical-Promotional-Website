@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1773278465,
+        "name": "River Tours",
+        "type": "river-tours",
+        "description": "Navigate pristine waterways with expert guides.",
+        "date": "2026-03-12",
+        "image": "../assets/images/experiences/experience_1773278465_69b215016f24e.png",
+        "featured": true
+    },
+    {
+        "id": 1773714351,
+        "name": "Fe Misa Ayala Seniors Park ",
+        "type": "wellness",
+        "description": "Fe Misa Ayala Seniors Park is a peaceful public park in Tagum City dedicated to senior citizens, providing spaces for relaxation, light exercise, and social activities in a green and accessible environment.",
+        "date": "2025-04-11",
+        "image": "../../assets/images/experiences/experience_1773714351_69b8bbaf9e35e.jpg",
+        "featured": true
+    },
+    {
+        "id": 1773718644,
+        "name": "Children's Park",
+        "type": "Playground ",
+        "description": "A family-friendly park designed for children, featuring playground equipment and open spaces for safe play, fun, and social interaction.",
+        "date": "2025-07-08",
+        "image": "../../assets/images/experiences/experience_1773718644_69b8cc743abfc.jpg",
+        "featured": false
+    }
+]
