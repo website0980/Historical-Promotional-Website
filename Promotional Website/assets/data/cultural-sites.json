@@ -1,11 +1,11 @@
 [
     {
         "name": "Liberation Park",
-        "description": "Liberation Park commemorates the liberation of Davao del Norte and features monuments and memorials.",
-        "image": "../assets/images/cultural-sites/liberation.jpg",
         "location": "Central Tagum",
         "history": "Established to honor the heroes who fought for freedom in the region.",
-        "highlights": "Monuments, Memorial walls, Cultural exhibits"
+        "highlights": "Monuments, Memorial walls, Cultural exhibits",
+        "image": "../assets/images/cultural-sites/liberation.jpg",
+        "features": []
     },
     {
         "name": "Tagum City Museum",

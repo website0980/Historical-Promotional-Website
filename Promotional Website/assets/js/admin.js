@@ -20,12 +20,10 @@ document.addEventListener('DOMContentLoaded', function() {
         textarea.maxLength = 300;
     });
     
-    // Image optional in edit mode (preserve existing)
+    // Image optional in edit mode (preserve existing) - FIXED browser warning
     const imageInputs = document.querySelectorAll('input[name="image_file"]');
     imageInputs.forEach(input => {
-        if (!document.body.classList.contains('edit-mode')) {
-            input.required = true;
-        }
+        input.required = false; // Always optional - PHP handles validation
     });
     
     // Form row balance

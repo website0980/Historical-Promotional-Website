@@ -1,9 +1,6 @@
-# Fix Experience Details ✓
+# Task: Update Slide 1 & Slide 3 Background Images
 
-## Steps:
-- [x] 1. Update JS ✓
-- [x] 2. Update CSS ✓
-- [x] 3. Update PHP ✓
-- [x] 4. Images OK (paths fixed, error handling)
-- [x] 5. Tested: Works!
-- [x] 6. Done
+- [x] Verify Slide 3
+- [x] Step 1: Update index.php Slide 1 background to 'assets/images/Background for slide 1.jpg'
+- [x] Step 2: Verify the change
+- [x] Step 3: Complete task

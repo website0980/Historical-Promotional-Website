@@ -490,14 +490,7 @@ body {
 }
 
 /* Footer */
-.admin-footer {
-    background: var(--light-gray);
-    text-align: center;
-    padding: 1.5rem;
-    color: var(--gray);
-    font-size: 0.9rem;
-    margin-top: 2rem;
-}
+.admin-footer {\n    background: var(--light-gray);\n}\n\n.admin-footer .center {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.admin-footer p {\n    text-align: center;\n    color: var(--light-green);\n    font-size: 0.9rem;\n    margin-top: 2rem;\n}
 
 /* Form Sections */
 .form-section {

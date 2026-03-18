@@ -34,8 +34,8 @@
 
             <!-- Section Tabs -->
             <div class="section-tabs">
-                <button class="tab-btn active" data-section="featured">⭐ Featured</button>
-                <button class="tab-btn" data-section="natural-wonders">Natural Wonders</button>
+
+
                 <button class="tab-btn" data-section="cultural-sites">Cultural Sites</button>
                 <button class="tab-btn" data-section="local-cuisine">Local Cuisine</button>
                 <button class="tab-btn" data-section="festivals">Festivals</button>

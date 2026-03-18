@@ -17,18 +17,7 @@
     <section class="explore" id="explore">
         <h2>Explore Tagum City</h2>
         <div class="explore-grid">
-            <!-- Natural Wonders Card -->
-            <div class="explore-card">
-                <div class="card-image">🏞️</div>
-                <h3>Natural Wonders</h3>
-                <p>Discover breathtaking landscapes and pristine natural attractions.</p>
-                <button class="learn-more-btn" data-card="natural-wonders">Learn More →</button>
-            </div>
-
-            <!-- Cultural Sites Card -->
-            <div class="explore-card">
-                <div class="card-image">🏛️</div>
-                <h3>Cultural Sites</h3>
+            <!-- Cultural Sites Card -->            <div class="explore-card">                <div class="card-image">🏛️</div>                <h3>Cultural Sites</h3>
                 <p>Experience the rich history and cultural heritage of our community.</p>
                 <button class="learn-more-btn" data-card="cultural-sites">Learn More →</button>
             </div>

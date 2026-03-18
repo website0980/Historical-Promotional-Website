@@ -122,15 +122,11 @@ body {
     color: var(--dark-green);
 }
 
-.admin-nav-link {
-    background-color: var(--light-green);
-    color: var(--white) !important;
-    padding: 8px 16px;
-    border-radius: 4px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    font-size: 14px;
-}
+.admin-nav-link {\n    background-color: var(--light-green);\n    color: var(--white) !important;\n    padding: 8px 16px;\n    border-radius: 4px;\n    font-weight: 600;\n    transition: all 0.3s ease;\n    font-size: 14px;\n}\n\n.data-privacy-notice {\n    background-color: var(--light-green);\n    color: white;\n    text-align: center;\n    padding: 0.75rem;\n    font-size: 0.85rem;\n    font-weight: 500;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    box-shadow: 0 2px 4px rgba(45, 122, 77, 0.3);\n}
+</xai:function_call >
+
+<xai:function_call name="edit_file">
+<parameter name="path">assets/css/admin.css
 
 .admin-nav-link:hover {
     background-color: var(--dark-green);
@@ -185,7 +181,7 @@ body {
 }
 
 .slide-tagline {
-    color: var(--light-green);
+    color: var(--white);
     font-size: 1rem;
     margin-bottom: 0.5rem;
     font-weight: 600;
@@ -535,7 +531,7 @@ body {
 /* Footer */
 .footer {
     background-color: var(--dark-green);
-    color: var(--white);
+    color: var(--light-green);
     padding: 2rem;
     text-align: center;
 }

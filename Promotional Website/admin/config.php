@@ -19,9 +19,6 @@ define('EXPERIENCES_FILE', dirname(__DIR__) . '/assets/data/experiences.json');
 // Cuisine data file
 define('CUISINE_FILE', dirname(__DIR__) . '/assets/data/cuisine.json');
 
-// Natural Wonders data file
-define('NATURAL_WONDERS_FILE', dirname(__DIR__) . '/assets/data/natural-wonders.json');
-
 // Cultural Sites data file
 define('CULTURAL_SITES_FILE', dirname(__DIR__) . '/assets/data/cultural-sites.json');
 
@@ -39,8 +36,6 @@ define('EXPERIENCES_IMAGES_DIR', dirname(__DIR__) . '/assets/images/experiences/
 define('EXPERIENCES_IMAGES_URL', '../../assets/images/experiences/');
 define('CUISINE_IMAGES_DIR', dirname(__DIR__) . '/assets/images/cuisine/');
 define('CUISINE_IMAGES_URL', '../../assets/images/cuisine/');
-define('NATURAL_WONDERS_IMAGES_DIR', dirname(__DIR__) . '/assets/images/natural-wonders/');
-define('NATURAL_WONDERS_IMAGES_URL', '../../assets/images/natural-wonders/');
 define('CULTURAL_SITES_IMAGES_DIR', dirname(__DIR__) . '/assets/images/cultural-sites/');
 define('CULTURAL_SITES_IMAGES_URL', '../../assets/images/cultural-sites/');
 define('FESTIVALS_IMAGES_DIR', dirname(__DIR__) . '/assets/images/festivals/');
@@ -254,65 +249,6 @@ function deleteCuisineImage($pathOrFileName) {
     $fileName = basename($pathOrFileName);
     if (empty($fileName)) return false;
     $filePath = CUISINE_IMAGES_DIR . $fileName;
-    if (file_exists($filePath)) {
-        unlink($filePath);
-        return true;
-    }
-    return false;
-}
-
-// ==================== NATURAL WONDERS MANAGEMENT FUNCTIONS ====================
-
-// Load natural wonders from JSON file
-function loadNaturalWonders() {
-    if (!file_exists(NATURAL_WONDERS_FILE)) {
-        return [];
-    }
-    
-    $json = file_get_contents(NATURAL_WONDERS_FILE);
-    return json_decode($json, true) ?? [];
-}
-
-// Save natural wonders to JSON file
-function saveNaturalWonders($naturalWonders) {
-    $dir = dirname(NATURAL_WONDERS_FILE);
-    if (!is_dir($dir)) {
-        mkdir($dir, 0755, true);
-    }
-    
-    file_put_contents(NATURAL_WONDERS_FILE, json_encode($naturalWonders, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
-    return true;
-}
-
-// Save uploaded natural wonders image
-function saveNaturalWonderImage($file) {
-    $validation = validateImageUpload($file);
-    if (!$validation['success']) {
-        return $validation;
-    }
-    
-    // Create natural wonders images directory if it doesn't exist
-    if (!is_dir(NATURAL_WONDERS_IMAGES_DIR)) {
-        mkdir(NATURAL_WONDERS_IMAGES_DIR, 0755, true);
-    }
-    
-    // Generate unique filename
-    $fileExt = strtolower(pathinfo($file['name'], PATHINFO_EXTENSION));
-    $fileName = 'natural_' . time() . '_' . uniqid() . '.' . $fileExt;
-    $filePath = NATURAL_WONDERS_IMAGES_DIR . $fileName;
-    
-    if (move_uploaded_file($file['tmp_name'], $filePath)) {
-        return ['success' => true, 'fileName' => $fileName, 'path' => NATURAL_WONDERS_IMAGES_URL . $fileName];
-    }
-    
-    return ['success' => false, 'error' => 'Failed to save image'];
-}
-
-// Delete natural wonder image (accepts full path or filename)
-function deleteNaturalWonderImage($pathOrFileName) {
-    $fileName = basename($pathOrFileName);
-    if (empty($fileName)) return false;
-    $filePath = NATURAL_WONDERS_IMAGES_DIR . $fileName;
     if (file_exists($filePath)) {
         unlink($filePath);
         return true;

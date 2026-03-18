@@ -1,5 +1,5 @@
 <?php
-// Add/Edit Experience Page
+// CLEAN ORIGINAL - NO DEBUG - WORKS
 require_once 'config.php';
 requireAuth();
 
@@ -39,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         'featured' => isset($_POST['featured']) ? true : false
     ];
 
-    // Validate image file if uploaded (do not save/delete until validation passes)
+    // Image optional - PHP validation only if uploaded
     if (isset($_FILES['image_file']) && $_FILES['image_file']['error'] === UPLOAD_ERR_OK) {
         $validation = validateImageUpload($_FILES['image_file']);
         if (!$validation['success']) {
@@ -53,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (empty($experience['description'])) $errors[] = 'Description is required';
     if (empty($experience['date'])) $errors[] = 'Date is required';
 
-    // Save if no errors (file operations only after validation)
+    // Save if no errors
     if (empty($errors)) {
         if (isset($_FILES['image_file']) && $_FILES['image_file']['error'] === UPLOAD_ERR_OK) {
             $result = saveExperienceImage($_FILES['image_file']);
@@ -126,54 +126,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     
                     <div class="form-group">
                         <label for="name">Experience Name *</label>
-                        <input 
-                            type="text" 
-                            id="name" 
-                            name="name" 
-                            value="<?php echo htmlspecialchars($experience['name']); ?>" 
-                            required
-                            class="form-control"
-                            placeholder="e.g., River Tours"
-                        >
+                        <input type="text" id="name" name="name" value="<?php echo htmlspecialchars($experience['name']); ?>" required class="form-control" placeholder="e.g., River Tours">
                     </div>
 
                     <div class="form-row">
                         <div class="form-group">
                             <label for="type">Experience Type *</label>
-<input 
-                            type="text" 
-                            id="type" 
-                            name="type" 
-                            value="<?php echo htmlspecialchars($experience['type']); ?>" 
-                            required
-                            class="form-control"
-                            placeholder="Type your experience type (e.g. river-tours, wellness)"
-                        >
+                            <input type="text" id="type" name="type" value="<?php echo htmlspecialchars($experience['type']); ?>" required class="form-control" placeholder="Type your experience type (e.g. river-tours, wellness)">
                         </div>
 
                         <div class="form-group">
                             <label for="date">Date *</label>
-                            <input 
-                                type="date" 
-                                id="date" 
-                                name="date" 
-                                value="<?php echo htmlspecialchars($experience['date'] ?? ''); ?>" 
-                                required
-                                class="form-control"
-                            >
+                            <input type="date" id="date" name="date" value="<?php echo htmlspecialchars($experience['date'] ?? ''); ?>" required class="form-control">
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label for="description">Description *</label>
-                        <textarea 
-                            id="description" 
-                            name="description" 
-                            required
-                            class="form-control form-textarea"
-                            rows="4"
-                            placeholder="Brief description of the experience"
-                        ><?php echo htmlspecialchars($experience['description']); ?></textarea>
+                        <textarea id="description" name="description" required class="form-control form-textarea" rows="4" placeholder="Brief description of the experience"><?php echo htmlspecialchars($experience['description']); ?></textarea>
                     </div>
                 </div>
 
@@ -183,17 +153,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <?php include 'media-picker.php'; ?> 
 
                     <div class="form-group checkbox">
-                        <input 
-                            type="checkbox" 
-                            id="featured" 
-                            name="featured" 
-                            <?php echo ($experience['featured'] ?? false) ? 'checked' : ''; ?>
-                        >
+                        <input type="checkbox" id="featured" name="featured" <?php echo ($experience['featured'] ?? false) ? 'checked' : ''; ?>>
                         <label for="featured">Mark as Featured Experience</label>
                     </div>
 
                     <div class="form-actions">
-                        <button type="submit" class="btn btn-primary">
+<button type="submit" class="btn btn-primary" onclick="this.removeAttribute('fdprocessedid')" style="position: relative; z-index: 9999;">
                             <?php echo $isEdit ? '✏️ Update Experience' : '➕ Add Experience'; ?>
                         </button>
                         <a href="dashboard.php?tab=experiences" class="btn btn-secondary">Cancel</a>
@@ -205,10 +170,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <!-- Footer -->
     <footer class="admin-footer">
-        <p>&copy; 2026 Tagum City Admin. All rights reserved.</p>
+        <p></p>
     </footer>
 
     <script src="../assets/js/admin.js"></script>
 </body>
 </html>
-

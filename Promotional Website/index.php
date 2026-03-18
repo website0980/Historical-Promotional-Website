@@ -11,7 +11,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
-<img src="assets/images/City of Tagum Logo.png" alt="Tagum City" class="logo-img">
+                <img src="assets/images/City of Tagum Logo.png" alt="Tagum City" class="logo-img">
                 <span class="logo-text">Tagum City</span>
             </div>
             <ul class="nav-menu">
@@ -19,7 +19,7 @@
                 <li><a href="#explore" class="nav-link">Explore</a></li>
                 <li><a href="#experiences" class="nav-link">Experiences</a></li>
                 <li><a href="#plan" class="nav-link">Plan</a></li>
-<li><a href="admin/login.php" class="nav-link admin-nav-link">Admin</a></li>
+<li><a href="admin/login.php" class="btn btn-primary tab-btn admin-btn">Admin</a></li>
             </ul>
         </div>
     </nav>
@@ -28,13 +28,13 @@
     <section class="hero-carousel" id="home">
         <div class="carousel-container">
             <!-- Slide 1 -->
-            <div class="carousel-slide active" style="background-image: url('assets/images/hero-1.jpg');">
+            <div class="carousel-slide active" style="background-image: url('assets/images/Background for slide 1.jpg');">
                 <div class="slide-overlay"></div>
                 <div class="slide-content">
-                    <p class="slide-tagline">Lush landscapes and serene waterways</p>
+                    <p class="slide-tagline">Tagumeños: Beauty that Shines from Within.</p>
                     <h1 class="slide-title">Discover<br>Natural Beauty</h1>
                     <p class="slide-description">
-                        Explore the pristine rivers, waterfalls, and verdant forests that make Tagum a paradise for nature lovers. Experience the tranquility and magnificent scenery that our city has to offer.
+                        Tagumeños are a reflection of true natural beauty radiating warmth, kindness, and genuine smiles that make everyone feel welcome. Their charm goes beyond appearance, shining through their hospitality, vibrant spirit, and the rich culture they proudly carry in their hearts.
                     </p>
                     <div class="button-group">
                         <a href="#plan" class="btn btn-primary smooth-scroll">Explore Now</a>
@@ -44,7 +44,7 @@
             </div>
 
             <!-- Slide 2 -->
-            <div class="carousel-slide" style="background-image: url('assets/images/hero-2.jpg');">
+            <div class="carousel-slide" style="background-image: url('assets/images/Background for slide 2 .jpg');">
                 <div class="slide-overlay"></div>
                 <div class="slide-content">
                     <p class="slide-tagline">Cultural heritage meets modern charm</p>
@@ -60,19 +60,18 @@
             </div>
 
             <!-- Slide 3 -->
-            <div class="carousel-slide" style="background-image: url('assets/images/hero-3.jpg');">
+            <div class="carousel-slide" style="background-image: url('assets/images/Background for slide 3.jpg');">
                 <div class="slide-overlay"></div>
                 <div class="slide-content">
-                    <p class="slide-tagline">Adventure awaits at every corner</p>
+                    <p class="slide-tagline">Tagum Adventures: Feel the Thrill, Live the Moment</p>
                     <h1 class="slide-title">Thrilling<br>Adventures</h1>
                     <p class="slide-description">
-                        From mountain trails to river expeditions, Tagum offers endless opportunities for adventure. Create unforgettable memories in our stunning natural landscape.
+                        Step into the excitement that awaits in Tagum where every journey is filled with adrenaline, discovery, and unforgettable moments. From outdoor explorations to vibrant city experiences, adventure is always just around the corner.
                     </p>
                     <div class="button-group">
                         <a href="#plan" class="btn btn-primary smooth-scroll">Explore Now</a>
                         <a href="#explore" class="btn btn-secondary smooth-scroll">Learn More</a>
                     </div>
-
                 </div>
             </div>
 
@@ -93,14 +92,6 @@
     <section class="explore" id="explore">
         <h2>Explore Tagum City</h2>
         <div class="explore-grid">
-            <!-- Natural Wonders Card -->
-            <div class="explore-card">
-                <div class="card-image">🏞️</div>
-                <h3>Natural Wonders</h3>
-                <p>Discover breathtaking landscapes and pristine natural attractions.</p>
-                <a href="Explore module/explore.php?section=natural-wonders" class="card-link">Learn More →</a>
-            </div>
-
             <!-- Cultural Sites Card -->
             <div class="explore-card">
                 <div class="card-image">🏛️</div>
@@ -335,12 +326,10 @@
         </div>
     </section>
 
-    <!-- Destination Guide Card -->
-
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <p>&copy; 2026 Tagum City. All rights reserved.</p>
+
             <div class="footer-links">
                 <a href="#">Privacy Policy</a>
                 <a href="#">Terms of Service</a>
@@ -352,3 +341,4 @@
     <script src="assets/js/script.js"></script>
 </body>
 </html>
+

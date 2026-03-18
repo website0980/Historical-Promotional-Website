@@ -94,7 +94,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <p>&copy; 2026 Tagum City. All rights reserved.</p>
+            <p></p>
         </div>
     </footer>
 

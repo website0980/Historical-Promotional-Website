@@ -6,7 +6,7 @@ requireAuth();
 $destinations = loadDestinations();
 $experiences = loadExperiences();
 $cuisines = loadCuisine();
-$naturalWonders = loadNaturalWonders();
+
 $culturalSites = loadCulturalSites();
 $festivals = loadFestivals();
 $message = '';
@@ -101,23 +101,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
     }
 }
 
-// Handle natural wonders delete
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['action'] === 'delete-natural-wonder') {
-    $id = $_POST['id'] ?? null;
-    
-    if ($id !== null && isset($naturalWonders[$id])) {
-        // Delete image if exists
-        if (!empty($naturalWonders[$id]['image'])) {
-            deleteNaturalWonderImage(basename($naturalWonders[$id]['image']));
-        }
-        unset($naturalWonders[$id]);
-        // Re-index array
-        $naturalWonders = array_values($naturalWonders);
-        saveNaturalWonders($naturalWonders);
-        $message = 'Natural Wonder deleted successfully!';
-        $messageType = 'success';
-    }
-}
+
 
 // Handle cultural sites delete
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['action'] === 'delete-cultural-site') {
@@ -192,9 +176,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
             <div class="tab-buttons">
                 <a href="?tab=destinations" class="btn btn-primary tab-btn <?php echo $currentTab === 'destinations' ? 'active' : ''; ?>">Destinations</a>
                 <a href="?tab=experiences" class="btn btn-primary tab-btn <?php echo $currentTab === 'experiences' ? 'active' : ''; ?>">Experiences</a>
-                <a href="?tab=cuisine" class="btn btn-primary tab-btn <?php echo $currentTab === 'cuisine' ? 'active' : ''; ?>">Cuisine</a>
-                <a href="?tab=natural-wonders" class="btn btn-primary tab-btn <?php echo $currentTab === 'natural-wonders' ? 'active' : ''; ?>">Natural Wonders</a>
-                <a href="?tab=cultural-sites" class="btn btn-primary tab-btn <?php echo $currentTab === 'cultural-sites' ? 'active' : ''; ?>">Cultural Sites</a>
+                <a href="?tab=cuisine" class="btn btn-primary tab-btn <?php echo $currentTab === 'cuisine' ? 'active' : ''; ?>">Cuisine</a>                <a href="?tab=cultural-sites" class="btn btn-primary tab-btn <?php echo $currentTab === 'cultural-sites' ? 'active' : ''; ?>">Cultural Sites</a>
                 <a href="?tab=festivals" class="btn btn-primary tab-btn <?php echo $currentTab === 'festivals' ? 'active' : ''; ?>">Festivals</a>
             </div>
 
@@ -413,70 +395,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
                 </div>
             <?php endif; ?>
 
-            <!-- Natural Wonders Section -->
-            <?php if ($currentTab === 'natural-wonders'): ?>
-                <div class="dashboard-header">
-                    <h2>Manage Natural Wonders</h2>
-                    <a href="add-natural-wonder.php" class="btn btn-primary">+ Add New Natural Wonder</a>
-                </div>
 
-                <div class="table-responsive">
-                    <?php if (empty($naturalWonders)): ?>
-                        <div class="empty-state">
-                            <p>🏞️ No natural wonders found</p>
-                            <a href="add-natural-wonder.php" class="btn btn-primary">Add your first natural wonder</a>
-                        </div>
-                    <?php else: ?>
-                        <table class="destinations-table">
-                            <thead>
-                                <tr>
-                                    <th>Image</th>
-                                    <th>Name</th>
-                                    <th>Location</th>
-                                    <th>Best Time</th>
-                                    <th>Actions</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <?php foreach ($naturalWonders as $index => $wonder): ?>
-                                    <tr>
-                                        <td class="table-image">
-                                            <?php if (!empty($wonder['image'])): ?>
-                                                <img src="<?php echo htmlspecialchars($wonder['image']); ?>" alt="<?php echo htmlspecialchars($wonder['name']); ?>">
-                                            <?php else: ?>
-                                                <span class="no-image">No Image</span>
-                                            <?php endif; ?>
-                                        </td>
-                                        <td>
-                                            <strong><?php echo htmlspecialchars($wonder['name']); ?></strong>
-                                        </td>
-                                        <td>
-                                            <?php echo htmlspecialchars($wonder['location'] ?? 'N/A'); ?>
-                                        </td>
-                                        <td>
-                                            <?php echo htmlspecialchars($wonder['best_time'] ?? 'N/A'); ?>
-                                        </td>
-                                        <td class="action-buttons">
-                                            <a href="add-natural-wonder.php?edit=<?php echo $index; ?>" class="btn btn-small btn-edit">Edit</a>
-                                            <form method="POST" style="display: inline;" onsubmit="return confirm('Are you sure you want to delete this natural wonder?');">
-                                                <input type="hidden" name="action" value="delete-natural-wonder">
-                                                <input type="hidden" name="id" value="<?php echo $index; ?>">
-                                                <button type="submit" class="btn btn-small btn-delete">Delete</button>
-                                            </form>
-                                        </td>
-                                    </tr>
-                                <?php endforeach; ?>
-                            </tbody>
-                        </table>
-                    <?php endif; ?>
-                </div>
-
-                <div class="dashboard-stats">
-                    <div class="stat-card">
-                        <div class="stat-number"><?php echo count($naturalWonders); ?></div>
-                        <div class="stat-label">Total Natural Wonders</div>
-                </div>
-            <?php endif; ?>
 
             <!-- Cultural Sites Section -->
             <?php if ($currentTab === 'cultural-sites'): ?>
@@ -612,7 +531,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
 
     <!-- Footer -->
     <footer class="admin-footer">
-        <p>&copy; 2026 Tagum City Admin. All rights reserved.</p>
+
     </footer>
 
     <script src="../assets/js/admin.js"></script>

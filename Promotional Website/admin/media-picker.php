@@ -19,7 +19,7 @@
         <p class="image-option-hint">Upload an image for this destination.</p>
         <button type="button" class="btn btn-primary" onclick="document.getElementById('image-file').click();">Choose image</button>
     <?php endif; ?>
-    <input type="file" id="image-file" name="image_file" accept="image/*" style="display:none;">
+    <input type="file" id="image-file" name="image_file" accept="image/*" style="display:none;" <?php echo !$image ? 'required' : ''; ?>>
     <div id="image-preview" style="margin-top:10px;"></div>
     <small>Optional. Uploads when you click Save.</small>
 </div>

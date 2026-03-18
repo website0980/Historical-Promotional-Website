@@ -117,14 +117,16 @@ if (empty($destinations)) {
 
             <!-- Destination Detail -->
             <div class="destination-detail active">
-                <h1><?php echo htmlspecialchars($selectedDestination['name']); ?></h1>
+                <h1><?php echo (isset($selectedDestination['featured']) && $selectedDestination['featured']) ? '⭐ ' : ''; ?><?php echo htmlspecialchars($selectedDestination['name']); ?></h1>
                 <?php
                 if (isset($_SESSION['admin_logged_in']) && $_SESSION['admin_logged_in'] === true):
                 ?>
                 <?php endif; ?>
                 
                 <?php if (!empty($selectedDestination['image'])): ?>
-                    <img src="<?php echo htmlspecialchars($selectedDestination['image']); ?>" alt="<?php echo htmlspecialchars($selectedDestination['name']); ?>" class="destination-image">
+                    <div class="image-showcase">
+                        <img src="<?php echo htmlspecialchars($selectedDestination['image']); ?>" alt="<?php echo htmlspecialchars($selectedDestination['name']); ?>" class="destination-image">
+                    </div>
                 <?php endif; ?>
                 
                 <div class="destination-content">
@@ -175,7 +177,7 @@ if (empty($destinations)) {
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <p>&copy; 2026 Tagum City. All rights reserved.</p>
+
             <div class="footer-links">
                 <a href="#">Privacy Policy</a>
                 <a href="#">Terms of Service</a>

@@ -13,7 +13,7 @@
         "what_to_pack": "Comfortable hiking shoes with good grip\r\nSwimwear and water-resistant bag\r\nSunscreen (SPF 50+) and insect repellent\r\nHat or cap for sun protection\r\n2-3 liters of drinking water\r\nLight snacks\r\nQuick-dry towel\r\nBasic first aid kit\r\nWaterproof phone case\r\nTrash bags",
         "visiting_rules": "Do not litter - carry all waste out\r\nStay on marked trails only\r\nNo diving from rocks\r\nSwimming in designated areas only\r\nDo not use chemical sunscreen\r\nDo not pick flowers or plants\r\nDo not feed animals\r\nParental supervision required for children",
         "image": "",
-        "featured": true
+        "featured": false
     },
     {
         "name": "Azuela Springs",
@@ -64,20 +64,20 @@
         "featured": false
     },
     {
-        "name": "Tagum City Museum",
+        "name": "Historical Museum",
         "type": "Museum",
         "description": "The Tagum City Museum preserves and showcases the rich cultural heritage and historical artifacts of the city. From pre-colonial artifacts to modern memorabilia, the museum tells the story of Tagum's past and present.",
         "location": "City Hall Complex, downtown Tagum City",
         "accessibility": "Central location, easy access from downtown",
-        "features": "Pre-colonial artifacts\nHistorical documents\nCultural exhibits\nModern displays",
-        "facilities": "Restrooms\nGift shop\nGuide services\nParking",
-        "entrance_fee": "\u20b175 per person (Students: \u20b140, Children under 6: Free)",
+        "features": "Pre-colonial artifacts\r\nHistorical documents\r\nCultural exhibits\r\nModern displays",
+        "facilities": "Restrooms\r\nGift shop\r\nGuide services\r\nParking",
+        "entrance_fee": "No Fee",
         "contact": "+63-904-555-5678",
-        "best_time": "Monday to Friday - Less crowded\nMorning Hours: 9am to 12pm optimal\nAvoid: Public holidays and festivals\nIndoor activity - suitable for rainy days\nGuided tours available (additional \u20b1200)",
-        "what_to_pack": "Comfortable walking shoes\nNotebook and pen\nCamera (if allowed)\nWater bottle\nLight jacket\nReading glasses\nHand sanitizer\nCash or card\nSmall bag for pamphlets",
-        "visiting_rules": "Do not touch artifacts\nNo flash photography\nKeep voices low\nNo eating except designated areas\nDo not lean on displays\nSupervise children\nDo not remove items\nUse restrooms beforehand\nReport broken displays\nRespect cultural sensitivity",
-        "image": "",
-        "featured": false
+        "best_time": "Monday to Friday - Less crowded\r\nMorning Hours: 9am to 12pm optimal\r\nAvoid: Public holidays and festivals\r\nIndoor activity - suitable for rainy days\r\n",
+        "what_to_pack": "Comfortable walking shoes\r\nNotebook and pen\r\nCamera (if allowed)\r\nWater bottle\r\nLight jacket\r\nReading glasses\r\nHand sanitizer\r\nCash or card\r\nSmall bag for pamphlets",
+        "visiting_rules": "Do not touch artifacts\r\nNo flash photography\r\nKeep voices low\r\nNo eating except designated areas\r\nDo not lean on displays\r\nSupervise children\r\nDo not remove items\r\nUse restrooms beforehand\r\nReport broken displays\r\nRespect cultural sensitivity",
+        "image": "../../assets/images/destinations/destination_1773817611_69ba4f0b38c98.jpg",
+        "featured": true
     },
     {
         "name": "San Fernando Church",
@@ -109,6 +109,22 @@
         "what_to_pack": "Water and Necessity Needs",
         "visiting_rules": "1.Keep the Park Clean\r\n\r\nDispose of trash properly in the designated bins.\r\n\r\nDo not litter in the park.\r\n\r\nHelp maintain a clean and pleasant environment for everyone.\r\n\r\n2. Respect Nature\r\n\r\nDo not damage plants, trees, or flowers.\r\n\r\nAvoid picking or removing plants from the park.\r\n\r\nProtect wildlife and do not disturb animals.\r\n\r\n3. Maintain Peace and Order\r\n\r\nKeep noise levels low to respect other visitors.\r\n\r\nLoud music and disruptive behavior are not allowed.\r\n\r\nFollow instructions from park staff or authorities.\r\n\r\n4. Safety First\r\n\r\nChildren must be supervised by adults at all times.\r\n\r\nUse park facilities and equipment properly.\r\n\r\nReport any hazards or accidents to park management immediately.\r\n\r\n5. Proper Use of Facilities\r\n\r\nUse benches, playgrounds, and other facilities responsibly.\r\n\r\nDo not vandalize or damage park property.\r\n\r\nFollow posted signs for specific areas and activities.\r\n\r\n6. Pets Policy\r\n\r\nPets must be kept on a leash at all times.\r\n\r\nOwners must clean up after their pets.\r\n\r\nEnsure pets do not disturb other visitors.\r\n\r\n7. Prohibited Activities\r\n\r\nSmoking, drinking alcohol, or illegal activities are strictly prohibited.\r\n\r\nDo not bring dangerous objects or substances into the park.\r\n\r\nCommercial activities require prior permission from park management.\r\n\r\n8. Park Operating Hours\r\n\r\nVisitors must follow the official park opening and closing hours.\r\n\r\nStaying in the park after closing time is not allowed.",
         "image": "../assets/images/destinations/destination_1773276286_69b20c7e7dda2.png",
+        "featured": true
+    },
+    {
+        "name": "Nabintad River Side Park",
+        "type": "Adventure",
+        "description": "Nabintad River in Tagum City is known for its clear, refreshing waters and lush surroundings. It offers a peaceful and calming atmosphere for visitors. The gentle flow of the river makes it ideal for relaxing and enjoying nature. It is a popular spot for swimming and simple outdoor bonding. Overall,",
+        "location": "Nabintad, Tagum, Davao del Norte.",
+        "accessibility": "45 minutes by car from the city, then 30-minute trek through forest",
+        "features": "Good for kids",
+        "facilities": "RestRoom",
+        "entrance_fee": "",
+        "contact": "+63-904-555-0123",
+        "best_time": "Early morning or late afternoon for cooler weather and fewer crowds. Dry season (November\u2013May) is ideal for clearer water and safer conditions.",
+        "what_to_pack": "Swimwear, extra clothes, towel, drinking water, snacks, sunscreen, and slippers or aqua shoes.",
+        "visiting_rules": "Keep the area clean bring your trash with you. Avoid loud noise to preserve the peaceful environment. Follow safety precautions and respect local guidelines.",
+        "image": "../../assets/images/destinations/destination_1773810309_69ba3285a39b5.jpg",
         "featured": true
     }
 ]

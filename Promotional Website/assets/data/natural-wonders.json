@@ -1,18 +1,1 @@
-[
-    {
-        "name": "Samal Island ",
-        "description": "Welcome to Samal Island, a tropical paradise in the Davao Gulf where visitors can enjoy stunning beaches, crystal-clear waters, and a relaxing island atmosphere perfect for adventure and leisure.",
-        "location": "Samal Island",
-        "features": "Many waterfront resorts dot this popular island with white sand beaches, marine reefs & waterfalls.",
-        "best_time": "December to April",
-        "image": ""
-    },
-    {
-        "name": "Nabintad River Side Park",
-        "description": "Nabintad River Side Park is one of the natural attractions in Tagum City, Davao del Norte. ",
-        "location": "Nabintad, Tagum, Davao del Norte",
-        "features": "Good for kids",
-        "best_time": "December to May (dry season) from 9:00 am to 3:00 pm",
-        "image": "../assets/images/natural-wonders/natural_1773300892_69b26c9c0f2a4.jpg"
-    }
-]
+[]
